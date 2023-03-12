@@ -1,0 +1,70 @@
+body {
+    background-color: #9FC131;
+    
+}
+
+button {
+    background-color: #042940;
+    color: #DBF227;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #023535;
+}
+
+table {
+    border: solid #23606E;
+    
+}
+
+.cantidad {
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input {
+    width: 60px;
+}
+
+#resultado {
+    font-weight: bold;
+}
+.total{
+    color: #005C53;
+    background-color: #D6D58E;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+/* Color Theme Swatches in Hex */
+.Green-Globe-On-Moss---Environmental-Concept-1-hex {
+    color: #042940;
+}
+
+.Green-Globe-On-Moss---Environmental-Concept-2-hex {
+    color: #005C53;
+}
+
+.Green-Globe-On-Moss---Environmental-Concept-3-hex {
+    color: #9FC131;
+}
+
+.Green-Globe-On-Moss---Environmental-Concept-4-hex {
+    color: #DBF227;
+}
+
+.Green-Globe-On-Moss---Environmental-Concept-5-hex {
+    color: #D6D58E;
+}
