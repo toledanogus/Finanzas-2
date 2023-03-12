@@ -49,7 +49,7 @@ export const FinanzasQ2 = () => {
                 <tfoot>
                     <tr>
                         <td>Total:</td>
-                        <td className='total' id="resultado"> {total2}</td>
+                        <td className='total' id="resultado">$ {total2}</td>
                     </tr>
                 </tfoot>
             </table>

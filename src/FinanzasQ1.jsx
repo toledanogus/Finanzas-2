@@ -7,10 +7,10 @@ import { FinanzasQ2 } from "./FinanzasQ2";
 
 export const FinanzasQ1 = () => {
 
-    const { comida, yan, gus, ahorro, despensa, psic, garrafones, gas, internet, luz, agua, basura, otro, total, gastos, setComida, setYan, setGus, setAhorro, setDespensa, setPsic, setGas, setInternet, setLuz, setAgua, setBasura, setOtro, setTotal, setGastos, gastos2, setGastos2, total2, setTotal2, gastosN, setGastosN, nota, setNota, mes, setMes} = useContext(GastosContexto);
+    const { comida, yan, gus, ahorro, despensa, psic, garrafones, gas, internet, luz, agua, basura, otro, total, gastos, setComida, setYan, setGus, setAhorro, setDespensa, setPsic, setGas, setInternet, setLuz, setAgua, setBasura, setOtro, setTotal, setGastos, gastos2, setGastos2, total2, setTotal2, gastosN, setGastosN, nota, setNota, mes, setMes } = useContext(GastosContexto);
 
     const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
-    
+
     const guardarValor = (concept) => {
         const getNumber = document.getElementById(concept);
         const getNota = document.getElementById(concept + 'a');
@@ -28,12 +28,14 @@ export const FinanzasQ1 = () => {
     }, [gastos])
 
     const seleccionarMes = () => {
-        setMes(mes+1)
+        (mes <= 10) ? setMes(mes + 1) : setMes(0);
     }
 
     return (
         <>
             <h3>{meses[mes]}</h3>
+            <button onClick={seleccionarMes}>Seleccionar mes</button>
+            <br />
             <table>
                 <thead>
                     <tr>
@@ -71,14 +73,13 @@ export const FinanzasQ1 = () => {
                 <tfoot>
                     <tr>
                         <td>Total:</td>
-                        <td className='total' id="resultado">{total}</td>
+                        <td className='total' id="resultado">$ {total}</td>
                     </tr>
                 </tfoot>
             </table>
             <br />
             <FinanzasQ2 />
-            <br />
-            <button onClick={seleccionarMes}>Seleccionar mes</button>
+
         </>
     )
 }
