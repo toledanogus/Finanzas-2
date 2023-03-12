@@ -19,14 +19,17 @@ export const GastosProvider = ({ children }) => {
 // const [otro, setOtro] = useState(0);
 const [total, setTotal] = useState(0);
 const [total2, setTotal2] = useState(0);
+const [mes, setMes] = useState(0);
+const [nota, setNota] = useState({'Comida': '', 'Yan': '', 'Gus': '', 'Ahorro': '', 'Despensa': '', 'Psicóloga': '', 'Garrafones': '', 'Gas': '', 'Internet': '', 'Luz': '', 'Agua': '', 'Basura': ''});
 const [gastos, setGastos] = useState({ 'Comida': 4400, 'Yan': 2000, 'Gus': 2000, 'Ahorro': 1500, 'Despensa': 1500, 'Psicóloga': 800, 'Garrafones': 440, 'Gas': 250, 'Internet': 600, 'Luz': 200, 'Agua': 300, 'Basura': 50 });
 
 const [gastos2, setGastos2] = useState({ 'Comida': 4400, 'Yan': 2000, 'Gus': 2000, 'Ahorro': 1500, 'Despensa': 1500, 'Psicóloga': 800, 'Garrafones': 440, 'Gas': 250, 'Internet': 600, 'Luz': 200, 'Agua': 300, 'Basura': 50 });
 
 const [gastosN, setGastosN] = useState({ 'Comida': 0, 'Yan': 0, 'Gus': 0, 'Ahorro': 0, 'Despensa': 0, 'Psicóloga': 0, 'Garrafones': 0, 'Gas': 0, 'Internet': 0, 'Luz': 0, 'Agua': 0, 'Basura': 0 });
 
+
     return (
-        <GastosContexto.Provider value={{total, setTotal, gastos, setGastos, gastos2, setGastos2, total2, setTotal2, gastosN, setGastosN}}>
+        <GastosContexto.Provider value={{total, setTotal, gastos, setGastos, gastos2, setGastos2, total2, setTotal2, gastosN, setGastosN, nota, setNota, mes, setMes}}>
             {children}
         </GastosContexto.Provider>
     )
