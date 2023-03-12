@@ -29,7 +29,6 @@ export const FinanzasQ2 = () => {
 
     return (
         <>
-            <h1>Quincena 2</h1>
             <table>
                 <thead>
                     <tr>
