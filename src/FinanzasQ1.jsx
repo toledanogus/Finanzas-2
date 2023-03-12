@@ -23,8 +23,6 @@ export const FinanzasQ1 = () => {
     
     return (
         <>
-
-            <span>Quincena 1</span>
             <table>
                 <thead>
                     <tr>
@@ -57,6 +55,7 @@ export const FinanzasQ1 = () => {
                     </tr>
                 </tfoot>
             </table>
+            <br />
             <FinanzasQ2 />
         </>
     )
